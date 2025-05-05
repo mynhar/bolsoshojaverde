@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolsos Artesanales | Piezas Únicas Hechas a Mano</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .title-font {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .hero-pattern {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        .handmade-icon {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .product-card:hover .product-overlay {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .product-overlay {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card {
+            background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+
+<body class="bg-amber-50 text-gray-800">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white bg-opacity-90 backdrop-blur-sm shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-bag-handled text-3xl text-amber-600 mr-2"></i>
+                <span class="title-font text-2xl font-bold text-amber-800">Bolsos de Marta E. Cabalceta P.</span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#inicio" class="font-medium hover:text-amber-600 transition">Inicio</a>
+                <a href="#coleccion" class="font-medium hover:text-amber-600 transition">Colección</a>
+                <a href="#sobre-mi" class="font-medium hover:text-amber-600 transition">Sobre Mí</a>
+                <a href="#testimonios" class="font-medium hover:text-amber-600 transition">Testimonios</a>
+                <a href="#contacto" class="font-medium hover:text-amber-600 transition">Contacto</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-gray-700 hover:text-amber-600">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <button class="md:hidden focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative overflow-hidden hero-pattern">
+        <div class="absolute inset-0 bg-gradient-to-r from-amber-100 to-transparent z-0"></div>
+        <div class="container mx-auto px-6 py-24 md:py-32 flex flex-col md:flex-row items-center relative z-10">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h1 class="title-font text-4xl md:text-6xl font-bold text-amber-900 mb-6">
+                    Bolsos Únicos <span class="text-amber-600">Hechos a Mano</span> con Pasión
+                </h1>
+                <p class="text-lg md:text-xl text-gray-700 mb-8">
+                    Cada pieza es creada con amor y dedicación, utilizando técnicas tradicionales y materiales de la más
+                    alta calidad.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#coleccion"
+                        class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-full font-medium text-center transition duration-300 transform hover:scale-105 shadow-lg">
+                        Ver Colección
+                    </a>
+                    <a href="#contacto"
+                        class="border-2 border-amber-600 text-amber-700 hover:bg-amber-50 px-8 py-3 rounded-full font-medium text-center transition duration-300 transform hover:scale-105">
+                        Encargos Personalizados
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center relative">
+                <div class="relative">
+                    <img src="./img/conecta-con-las-mejores-partes-de-ti-misma.jpg" alt="Bolso artesanal"
+                        class="rounded-lg shadow-2xl w-full max-w-md transform rotate-2">
+                    <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-full shadow-lg handmade-icon">
+                        <i class="fas fa-hands-helping text-3xl text-amber-600"></i>
+                    </div>
+                    <div class="absolute -top-6 -right-6 bg-white p-4 rounded-full shadow-lg">
+                        <span class="text-xs font-bold text-amber-800">HECHO A MANO</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unique Selling Points -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="title-font text-3xl md:text-4xl font-bold text-amber-900 mb-4">
+                    ¿Por qué elegir mis bolsos?
+                </h2>
+                <div class="w-24 h-1 bg-amber-500 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="text-center px-6">
+                    <div class="bg-amber-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-fingerprint text-3xl text-amber-600"></i>
+                    </div>
+                    <h3 class="title-font text-xl font-bold text-amber-900 mb-3">Piezas Únicas</h3>
+                    <p class="text-gray-600">
+                        Cada bolso es una obra de arte irrepetible. No encontrarás dos piezas exactamente iguales.
+                    </p>
+                </div>
+                <div class="text-center px-6">
+                    <div class="bg-amber-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-leaf text-3xl text-amber-600"></i>
+                    </div>
+                    <h3 class="title-font text-xl font-bold text-amber-900 mb-3">Materiales Premium</h3>
+                    <p class="text-gray-600">
+                        Utilizo cueros de primera calidad, telas naturales y acabados que garantizan durabilidad.
+                    </p>
+                </div>
+                <div class="text-center px-6">
+                    <div class="bg-amber-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-heart text-3xl text-amber-600"></i>
+                    </div>
+                    <h3 class="title-font text-xl font-bold text-amber-900 mb-3">Hecho con Amor</h3>
+                    <p class="text-gray-600">
+                        Cada puntada lleva mi cariño y dedicación, con atención meticulosa a cada detalle.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Section -->
+    <section id="coleccion" class="py-16 bg-amber-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="title-font text-3xl md:text-4xl font-bold text-amber-900 mb-4">
+                    Mi Colección
+                </h2>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                    Descubre bolsos que cuentan historias, cada uno con su propia personalidad y encanto.
+                </p>
+                <div class="w-24 h-1 bg-amber-500 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div
+                    class="product-card bg-white rounded-xl overflow-hidden shadow-lg transition duration-300 transform hover:-translate-y-2">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1566150902887-9679ecc155ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                            alt="Bolso de cuero tejido" class="w-full h-80 object-cover">
+                        <div
+                            class="product-overlay absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                            <button
+                                class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-2 rounded-full font-medium transition">
+                                Ver Detalles
+                            </button>
+                        </div>
+                        <div
+                            class="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-xs font-bold text-amber-800 shadow">
+                            ÚNICO
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="title-font text-xl font-bold text-amber-900 mb-2">Serenidad Tejida</h3>
+                        <p class="text-gray-600 text-sm mb-4">Bolso bandolera en cuero vegetal tejido a mano con técnica
+                            tradicional.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-amber-800 text-lg">$89.990</span>
+                            <button class="text-amber-600 hover:text-amber-800 transition">
+                                <i class="fas fa-heart text-xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div
+                    class="product-card bg-white rounded-xl overflow-hidden shadow-lg transition duration-300 transform hover:-translate-y-2">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
+                            alt="Bolso de fieltro bordado" class="w-full h-80 object-cover">
+                        <div
+                            class="product-overlay absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                            <button
+                                class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-2 rounded-full font-medium transition">
+                                Ver Detalles
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="title-font text-xl font-bold text-amber-900 mb-2">Flores del Alba</h3>
+                        <p class="text-gray-600 text-sm mb-4">Bolso de fieltro natural con bordado artesanal inspirado
+                            en la flora local.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-amber-800 text-lg">$75.990</span>
+                            <button class="text-amber-600 hover:text-amber-800 transition">
+                                <i class="fas fa-heart text-xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div
+                    class="product-card bg-white rounded-xl overflow-hidden shadow-lg transition duration-300 transform hover:-translate-y-2">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=704&q=80"
+                            alt="Bolso de cuero grabado" class="w-full h-80 object-cover">
+                        <div
+                            class="product-overlay absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                            <button
+                                class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-2 rounded-full font-medium transition">
+                                Ver Detalles
+                            </button>
+                        </div>
+                        <div
+                            class="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-xs font-bold text-amber-800 shadow">
+                            ÚNICO
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="title-font text-xl font-bold text-amber-900 mb-2">Luna de Cuero</h3>
+                        <p class="text-gray-600 text-sm mb-4">Bolso de cuero curtido al vegetal con grabados de símbolos
+                            ancestrales.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-amber-800 text-lg">$120.990</span>
+                            <button class="text-amber-600 hover:text-amber-800 transition">
+                                <i class="fas fa-heart text-xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#"
+                    class="inline-block border-2 border-amber-600 text-amber-700 hover:bg-amber-600 hover:text-white px-8 py-3 rounded-full font-medium transition duration-300 transform hover:scale-105">
+                    Ver Todos los Bolsos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="sobre-mi" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+                    <div class="relative">
+                        <img src="./img/marta.jpg" alt="Marta Artesana"
+                            class="rounded-full w-64 h-64 object-cover border-4 border-amber-200 shadow-lg">
+                        <div class="absolute -bottom-4 -right-4 bg-amber-600 text-white p-4 rounded-full shadow-lg">
+                            <i class="fas fa-award text-2xl"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <h2 class="title-font text-3xl md:text-4xl font-bold text-amber-900 mb-6">
+                        Hola, soy Marta E. Cabalceta P.
+                    </h2>
+                    <p class="text-gray-700 mb-4">
+                        Desde pequeña me apasionó el trabajo manual. A los 12 años aprendí a tejer con mi abuela, y
+                        desde entonces no he dejado de crear.
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        Cada bolso que hago lleva una parte de mi historia y mi corazón. Utilizo técnicas que he
+                        perfeccionado durante más de 20 años, combinando tradición con diseños contemporáneos.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/bolsoshojaverde/" target="_blank"
+                            class="bg-amber-100 hover:bg-amber-200 w-12 h-12 rounded-full flex items-center justify-center text-amber-600 transition transform hover:scale-110">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="https://www.facebook.com/tufacebook" target="_blank"
+                            class="bg-amber-100 hover:bg-amber-200 w-12 h-12 rounded-full flex items-center justify-center text-amber-600 transition transform hover:scale-110">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="https://www.pinterest.com/tupinterest" target="_blank"
+                            class="bg-amber-100 hover:bg-amber-200 w-12 h-12 rounded-full flex items-center justify-center text-amber-600 transition transform hover:scale-110">
+                            <i class="fab fa-pinterest-p text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <!-- <section id="testimonios" class="py-16 bg-amber-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="title-font text-3xl md:text-4xl font-bold text-amber-900 mb-4">
+                    Lo que dicen mis clientas
+                </h2>
+                <div class="w-24 h-1 bg-amber-500 mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8"> -->
+
+
+
+    <!-- Testimonial 1 -->
+    <!-- <div class="testimonial-card p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Ana Torres" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-amber-900">Ana Torres</h4>
+                            <div class="flex text-amber-500">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Mi bolso 'Serenidad Tejida' es mi compañero diario. No solo es hermoso, sino que la calidad es
+                        excepcional. Recibo cumplidos cada vez que salgo con él."
+                    </p>
+                </div> -->
+
+    <!-- Testimonial 2 -->
+    <!-- <div class="testimonial-card p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80"
+                                alt="Claudia Méndez" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-amber-900">Claudia Méndez</h4>
+                            <div class="flex text-amber-500">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Compré un bolso como regalo para mi madre y quedó encantada. Saber que es una pieza única y
+                        hecha a mano le dio un valor emocional adicional."
+                    </p>
+                </div> -->
+
+    <!-- Testimonial 3 -->
+    <!-- <div class="testimonial-card p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=686&q=80"
+                                alt="Valeria Soto" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-amber-900">Valeria Soto</h4>
+                            <div class="flex text-amber-500">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "La atención al detalle en estos bolsos es impresionante. He comprado varios y cada uno tiene su
+                        propia personalidad. ¡Mi colección favorita!"
+                    </p>
+                </div> -->
+
+
+    <!-- </div>
+        </div>
+    </section> -->
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-amber-600 text-white">
+        <!-- <div class="container mx-auto px-6 text-center">
+            <h2 class="title-font text-3xl md:text-4xl font-bold mb-6">
+                Únete a Mi Comunidad
+            </h2>
+            <p class="text-lg max-w-2xl mx-auto mb-8">
+                Suscríbete para recibir novedades, lanzamientos exclusivos y un 10% de descuento en tu primera compra.
+            </p>
+            <form class="max-w-md mx-auto flex flex-col sm:flex-row gap-4">
+                <input type="email" placeholder="Tu correo electrónico"
+                    class="flex-grow px-4 py-3 rounded-full focus:outline-none text-gray-800">
+                <button type="submit"
+                    class="bg-amber-900 hover:bg-amber-800 px-6 py-3 rounded-full font-medium transition duration-300 transform hover:scale-105">
+                    Suscribirme
+                </button>
+            </form>
+        </div> -->
+    </section>
+
+    <!-- Contact -->
+    <section id="contacto" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="title-font text-3xl md:text-4xl font-bold text-amber-900 mb-4">
+                    Contáctame
+                </h2>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                    ¿Tienes preguntas o quieres un diseño personalizado? Estoy aquí para ayudarte.
+                </p>
+                <div class="w-24 h-1 bg-amber-500 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Nombre</label>
+                            <input type="text" id="name"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Correo Electrónico</label>
+                            <input type="email" id="email"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Mensaje</label>
+                            <textarea id="message" rows="5"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-full font-medium transition duration-300 w-full">
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+
+                <div>
+                    <div class="bg-amber-50 p-8 rounded-xl h-full">
+                        <h3 class="title-font text-xl font-bold text-amber-900 mb-6">Información de Contacto</h3>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-amber-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-amber-900 mb-1">Ubicación</h4>
+                                    <p class="text-gray-600">Tibás, Costa Rica.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-amber-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-amber-900 mb-1">Correo Electrónico</h4>
+                                    <p class="text-gray-600">contacto@bolsosdemarta.com</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt text-amber-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-amber-900 mb-1">Teléfono/WhatsApp</h4>
+                                    <p class="text-gray-600">+506 5555 1234</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-clock text-amber-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-amber-900 mb-1">Horario de Atención</h4>
+                                    <p class="text-gray-600">Lunes a Viernes: 8:00 - 18:00 hrs<br>Sábado: 10:00 - 14:00
+                                        hrs</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8">
+                            <h4 class="font-bold text-amber-900 mb-4">Sígueme en Redes</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://www.instagram.com/bolsoshojaverde/" target="_blank"
+                                    class="bg-amber-100 hover:bg-amber-200 w-10 h-10 rounded-full flex items-center justify-center text-amber-600 transition transform hover:scale-110">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.facebook.com/tufacebook" target="_blank"
+                                    class="bg-amber-100 hover:bg-amber-200 w-10 h-10 rounded-full flex items-center justify-center text-amber-600 transition transform hover:scale-110">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.pinterest.com/tupinterest" target="_blank"
+                                    class="bg-amber-100 hover:bg-amber-200 w-10 h-10 rounded-full flex items-center justify-center text-amber-600 transition transform hover:scale-110">
+                                    <i class="fab fa-pinterest-p"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-amber-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-bag-handled text-2xl text-amber-300 mr-2"></i>
+                        <span class="title-font text-xl font-bold text-white">Bolsos de Marta E. Cabalceta P.</span>
+                    </div>
+                    <p class="text-amber-100 text-sm">
+                        Bolsos artesanales únicos, creados con amor y dedicación en mi taller.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="title-font text-lg font-bold mb-4">Enlaces Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#inicio" class="text-amber-100 hover:text-white transition">Inicio</a></li>
+                        <li><a href="#coleccion" class="text-amber-100 hover:text-white transition">Colección</a></li>
+                        <li><a href="#sobre-mi" class="text-amber-100 hover:text-white transition">Sobre Mí</a></li>
+                        <li><a href="#testimonios" class="text-amber-100 hover:text-white transition">Testimonios</a>
+                        </li>
+                        <li><a href="#contacto" class="text-amber-100 hover:text-white transition">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="title-font text-lg font-bold mb-4">Políticas</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-amber-100 hover:text-white transition">Términos y Condiciones</a>
+                        </li>
+                        <li><a href="#" class="text-amber-100 hover:text-white transition">Política de Privacidad</a>
+                        </li>
+                        <li><a href="#" class="text-amber-100 hover:text-white transition">Política de Envíos</a></li>
+                        <li><a href="#" class="text-amber-100 hover:text-white transition">Devoluciones</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="title-font text-lg font-bold mb-4">Métodos de Pago</h4>
+                    <div class="grid grid-cols-3 gap-3">
+                        <div class="bg-white p-2 rounded flex items-center justify-center">
+                            <i class="fab fa-cc-visa text-2xl text-gray-800"></i>
+                        </div>
+                        <div class="bg-white p-2 rounded flex items-center justify-center">
+                            <i class="fab fa-cc-mastercard text-2xl text-gray-800"></i>
+                        </div>
+                        <div class="bg-white p-2 rounded flex items-center justify-center">
+                            <i class="fab fa-cc-amex text-2xl text-gray-800"></i>
+                        </div>
+                        <div class="bg-white p-2 rounded flex items-center justify-center">
+                            <i class="fab fa-cc-paypal text-2xl text-gray-800"></i>
+                        </div>
+                        <div class="bg-white p-2 rounded flex items-center justify-center">
+                            <i class="fas fa-money-bill-wave text-xl text-gray-800"></i>
+                        </div>
+                        <div class="bg-white p-2 rounded flex items-center justify-center">
+                            <i class="fas fa-university text-xl text-gray-800"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-amber-800 mt-12 pt-8 text-center text-amber-200 text-sm">
+                <p>&copy; 2023 Bolsos de Marta E. Cabalceta P. Todos los derechos reservados.</p>
+                <p class="mt-2">Cada bolso es una pieza única, hecha a mano con materiales de primera calidad.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/50655551234"
+            class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition transform hover:scale-110">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <script>
+        // Simple JavaScript for demonstration purposes
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle would go here in a real implementation
+    </script>
+</body>
+
+</html>
